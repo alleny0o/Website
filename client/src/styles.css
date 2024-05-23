@@ -23,6 +23,5 @@ html, body {
 @media only screen and (max-width: 560px) {
   .line-border {
     width: 90% !important;
-    background-color: black;
   }
 }
