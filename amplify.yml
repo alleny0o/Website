@@ -3,14 +3,15 @@ frontend:
   phases:
     preBuild:
       commands:
+        - cd frontend
         - npm ci
     build:
       commands:
         - npm run build
   artifacts:
-    baseDirectory: build # Change this if your output directory is different
+    baseDirectory: frontend/build # Adjust this if your build output directory is different
     files:
       - "**/*"
   cache:
     paths:
-      - node_modules/**/*
+      - frontend/node_modules/**/*
