@@ -1,0 +1,171 @@
+#projects {
+  height: auto;
+  background-color: #2d2e32;
+}
+
+.project-heading-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-main-title {
+  color: white;
+  padding-top: 100px;
+}
+
+.project-main-subheading {
+  text-align: center;
+  width: 80%;
+  color: white;
+}
+
+.project-border {
+  height: 2px;
+  width: 500px;
+  margin-bottom: 80px;
+  background-color: white;
+}
+
+.project-container {
+  box-sizing: border-box;
+  color: white;
+  display: flex;
+  justify-content: center;
+  width: 150%;
+  margin: 0;
+  text-align: start;
+  padding-bottom: 100px;
+}
+
+.tech-container {
+  display: flex;
+  width: 80%;
+}
+
+.project-preview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 80%;
+  background-color: grey;
+  background-size: cover; /* Ensure the image covers the entire container */
+  background-position: center; /* Center the background image */
+  padding: 50px 20px;
+  border-radius: 15px;
+  margin-left: 30px;
+  background: linear-gradient(270deg, #4cb2ff, #ffffff);
+  background-size: 400% 400%;
+  animation: animateBackground 12s ease infinite;
+}
+
+@keyframes animateBackground {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.thumbnail {
+  width: 90%;
+  border-radius: 15px;
+}
+
+.project-info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-basis: 35%;
+}
+
+.description {
+  margin: 10px 0;
+}
+
+.project-title {
+  font-size: 30px;
+}
+
+.technologies-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.technologies {
+  margin-top: 10px;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.video-preview-btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #007bff; /* Button background color */
+  color: #fff; /* Text color */
+  border: none; /* Remove border */
+  border-radius: 30px; /* Rounded corners */
+  font-size: 1rem; /* Font size */
+  font-weight: bold; /* Bold text */
+  text-align: center; /* Center text */
+  cursor: pointer; /* Pointer cursor on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.video-preview-btn:hover {
+  background-color: #0056b3; /* Darker background on hover */
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.video-preview-btn:active {
+  background-color: #004494;
+  transform: translateY(0);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.video-preview-btn:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+@media only screen and (max-width: 1000px) {
+  .tech-container {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+  }
+
+  .project-container {
+      width: 100%;
+      justify-content: center;
+  }
+
+  .project-info-container {
+      text-align: center;
+      width: 90%;
+  }
+
+  .technologies {
+      text-align: center;
+  }
+
+  .skills-container {
+      width: 100%;
+  }
+
+  .project-preview {
+      width: 97%;
+      padding: 22px 0;
+      margin: 0;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+}

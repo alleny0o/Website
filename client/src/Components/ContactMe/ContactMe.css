@@ -1,0 +1,167 @@
+/* ContactMe.css */
+
+#contact-me {
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+.contact-me-flexbox {
+  width: 87%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 120px 70px;
+  gap: 150px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-me-form {
+  flex: 1;
+  max-width: 500px;
+  min-width: 250px;
+}
+
+.contact-me-form h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.contact-me-form p {
+  font-size: 1rem;
+}
+
+.contact-me-form-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-me-form-container label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.contact-me-form-container input,
+.contact-me-form-container textarea {
+  width: 100%;
+  padding: 0 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.contact-me-form-container button {
+  padding: 2px 20px;
+  background-color: #8f8f8f;
+  color: #fff;
+  border: 2px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.contact-me-form-container button:hover {
+  background-color: #3c3c3c;
+}
+
+.send-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+  width: 100%;
+}
+
+.resume-flexbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 350px;
+  width: 350px;
+}
+
+.resume-flexbox img {
+  width: 100%;
+  min-width: 350px;
+  height: auto;
+  max-width: 100%;
+  min-width: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.resume-flexbox button {
+  margin-top: 10px;
+  padding: 2px 10px;
+  background-color: #353535;
+  color: #fff;
+  border: 3px solid darkgray;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.resume-flexbox button:hover {
+  border: 3px solid #ffdf7e;
+}
+
+.send-message {
+  margin: 0;
+}
+
+@media only screen and (max-width: 1020px) {
+
+  #contact-me {
+    height: auto;
+    padding: 70px 0;
+  }
+
+  .contact-me-flexbox {
+    flex-direction: column;
+    width: 60%;
+  }
+
+  .contact-me-form {
+    flex: 1;
+    max-width: 500px;
+    min-width: 90%;
+  }
+  
+}
+
+.fa-paper-plane {
+  margin-left: 5px;
+}
+
+@media only screen and (max-width: 535px) {
+  .contact-me-flexbox {
+    width: 325px;
+  }
+
+  .resume-flexbox {
+    height: 240px;
+    width: 240px;
+  }
+
+
+  .contact-me-form {
+    flex: 1;
+    max-width: 500px;
+    min-width: 250px;
+  }
+}
+
+@media only screen and (max-height: 830px) {
+  #contact-me {
+    height: auto;
+    padding: 70px 0;
+  }
+}
